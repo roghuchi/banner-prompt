@@ -7,7 +7,7 @@
   lineinfile:
     path: ~/.bashrc
     line: export PS1="\e[{{ color }}m[\u@\h \W]\$ \e[m"
-  when: ps1_set_check.stdout.find('PS1') != 1
+  when: ps1_set_check.stdout.find('PS1') == 1
 
 - name: change prompt color
   lineinfile:
@@ -15,4 +15,4 @@
     state: present
     regexp: 'export PS1='
     line: 'export PS1="\e[{{ color }}m[\u@\h \W]\$ \e[m"'
-  when: ps1_set_check.stdout.find('PS1') == 1
+  when: ps1_set_check.stdout.find('PS1') != 1
