@@ -1,6 +1,6 @@
 ---
 - name: check ps1
-  command: cat ~/.bashrc | grep "export PS1"
+  shell: cat ~/.bashrc | grep "export PS1"
   register: ps1_set_check
 
 - name: add prompt color
