@@ -5,7 +5,7 @@
 
   vars:
     - color: "1;33"
-    - banner: "https://github.com/roghuchi/linux-template"
+    - banner: "https://github.com/roghuchi/linux-template/blob/main/banner.sh"
     
   roles:
     - prompt-change
