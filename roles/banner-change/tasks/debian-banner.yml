@@ -4,9 +4,3 @@
     url: https://raw.githubusercontent.com/roghuchi/linux-template/main/banner.sh
     dest: /etc/
     mode: 0755
-  
-- name: run banner.txt
-  shell: bash /etc/banner.sh
-
-- name: Remove banner.txt file
-  command: rm -rf /etc/banner.sh
