@@ -1,0 +1,7 @@
+---
+- name: download banner.sh file
+  file:
+    path: "/etc/banner.sh"
+    state: touch
+    mode: 0755
+

@@ -1,0 +1,5 @@
+---
+- name: change prompt color
+  lineinfile:
+    path: ~/.bashrc
+    line: export PS1="\e[{{ color }}m[\u@\h \W]\$ \e[m"

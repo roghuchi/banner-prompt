@@ -1,0 +1,8 @@
+---
+- name: change prompt for RHEL
+  import_tasks: centos-banner.yml
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+- name: change prompt for Debian
+  import_tasks: debian-banners.yml
+  when: ansible_facts['os_family']|lower == 'debian'
