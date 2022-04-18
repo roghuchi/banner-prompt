@@ -1,0 +1,12 @@
+---
+- name: download banner.sh file
+  ansible.builtin.get_url:
+    url: "{{ git-address }}"/blob/main/banner.sh
+    dest: /etc/banner.sh
+    mode: 0755
+  
+- name: run banner.sh
+  command: bash /etc/banner.sh
+
+- name: Remove banner.sh file
+  command: rm -rf /etc/banner.sh
