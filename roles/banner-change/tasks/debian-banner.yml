@@ -1,12 +1,12 @@
 ---
 - name: download banner.sh file
   ansible.builtin.get_url:
-    url: https://raw.githubusercontent.com/roghuchi/linux-template/main/banner.txt
+    url: https://raw.githubusercontent.com/roghuchi/linux-template/main/banner.sh
     dest: /etc/
     mode: 0755
   
 - name: run banner.txt
-  command: bash /etc/banner.txt
+  shell: bash /etc/banner.sh
 
 - name: Remove banner.txt file
-  command: rm -rf /etc/banner.txt
+  command: rm -rf /etc/banner.sh
