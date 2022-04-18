@@ -1,0 +1,8 @@
+---
+- name: change prompt for RHEL
+  import_tasks: prompt-color.yml
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+- name: change prompt for Debian
+  import_tasks: prompt-color.yml
+  when: ansible_facts['os_family']|lower == 'debian'

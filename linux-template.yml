@@ -2,9 +2,9 @@
 - hosts: localhost
   connection: local
   become: true
-
+  ansible_facts: true
   vars:
     - color: 1;33
   roles:
     - prompt-change
-    - banner-change
+#    - banner-change
