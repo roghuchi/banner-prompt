@@ -1,7 +1,8 @@
 ---
 - name: check ps1
   shell: cat ~/.bashrc | grep "export PS1"
-  register: ps1_set_check.stdout
+  register: ps1_set_check
+  ignore_errors: yes
 
 - name: add prompt color
   lineinfile:
