@@ -14,5 +14,5 @@
     path: ~/.bashrc
     state: present
     regexp: 'export PS1='
-    line: 'export PS1="\e[{{ color }}m[\u@\h \W]\$ \e[m"'
+    line: "export PS1=\"\e[{{ color }}m[\u@\h \W]\$ \e[m\""
   when: ps1_set_check.stdout.find('PS1') == 1
