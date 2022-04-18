@@ -14,4 +14,4 @@ KERNELRELEASE=$(uname -r)
 
 printf "%-16s%-42s\n" "Hostname:" "$HOSTNAME" >>$FILE
 printf "%-16s%-42s\n" "Kernel release:"	   "$KERNELRELEASE" >>$FILE
-printf "%-16s%-42s\n" "INTERNET:" 	   "$INTERNET" >>$FILE
+printf "%-16s%-42s\n" "Internet:" 	   "$INTERNET" >>$FILE
