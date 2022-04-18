@@ -1,7 +1,7 @@
 ---
 - name: download banner.sh file
   ansible.builtin.get_url:
-    url: {{ banner }}
+    url: https://raw.githubusercontent.com/roghuchi/linux-template/main/banner.sh
     dest: /etc/
     mode: 0755
   
