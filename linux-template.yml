@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  connection: local
   become: true
   ansible_facts: true
 
