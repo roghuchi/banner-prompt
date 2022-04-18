@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  vars:
+    - color: 1;33
+  roles:
+    - prompt-change
+    - banner-change
