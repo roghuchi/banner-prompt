@@ -1,7 +1,7 @@
 ---
 - name: download banner.sh file
   ansible.builtin.get_url:
-    url: "{{ git-address }}"/blob/main/banner.sh
+    url: "{{ git }}"/blob/main/banner.sh
     dest: /etc/banner.sh
     mode: 0755
   

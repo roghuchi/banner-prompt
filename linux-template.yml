@@ -5,7 +5,7 @@
 
   vars:
     - color: "1;33"
-    - git-address: "https://github.com/roghuchi/linux-template"
+    - git: "https://github.com/roghuchi/linux-template"
     
   roles:
     - prompt-change
