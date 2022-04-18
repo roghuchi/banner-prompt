@@ -1,11 +1,11 @@
 ---
-- hosts: "localhost"
+- hosts: localhost
   connection: local
   become: true
   ansible_facts: true
 
   vars:
-    - color: 1;33
+    - color: "1;33"
     
   roles:
     - prompt-change
